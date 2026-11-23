@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Restorely privacy policy</title>
+    <style>
+      :root {
+        --ink: #14232b;
+        --muted: #3e5360;
+        --brand: #0e7c6b;
+        --bg: #f3f6f5;
+        --surface: #fff;
+        --line: #dce5e2;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.55;
+      }
+      header {
+        background: #12312c;
+        color: #e7f3f0;
+        padding: 32px 20px;
+      }
+      header .wrap, main, footer .wrap { max-width: 720px; margin: 0 auto; }
+      h1 { margin: 0 0 8px; font-size: 28px; letter-spacing: -0.03em; }
+      .sub { margin: 0; color: #9fbab4; }
+      main { background: var(--surface); margin: 24px auto 48px; padding: 32px; border: 1px solid var(--line); border-radius: 16px; }
+      h2 { font-size: 18px; margin: 28px 0 8px; }
+      p, li { color: var(--muted); }
+      a { color: var(--brand); }
+      footer { padding: 0 20px 40px; color: #6b7f89; font-size: 13px; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <h1>Restorely privacy policy</h1>
+        <p class="sub">Last updated: 23 November 2026</p>
+      </div>
+    </header>
+    <main>
+      <p>Restorely is a Chrome extension that saves and restores browser tab sessions on your computer. This page explains what the extension does with data. It is written for the Chrome Web Store and for anyone using the extension.</p>
+
+      <h2>No data leaves your browser</h2>
+      <p>Restorely does not send your tabs, sessions, backups, settings, or “notify me” interest marks to a server. It has no account, no analytics, no advertising, and no third-party tracking. There is no network request made by the extension for telemetry or sync in this version.</p>
+      <p>The only files that leave your computer are ones you export yourself, when you choose to download a JSON backup or import a file you already have.</p>
+
+      <h2>What is stored, and where</h2>
+      <p>Restorely stores the following in Chrome’s local extension storage on the profile you are using:</p>
+      <ul>
+        <li>Named sessions you save, including tab addresses, titles, pinned state, and tab group name, colour, and collapsed state where the browser exposes them.</li>
+        <li>Automatic dated backups of the windows that were open, kept as a rolling history.</li>
+        <li>A last-known snapshot used to recover the previous browser state after Chrome starts.</li>
+        <li>Your settings, such as backup frequency and how many backups to keep.</li>
+        <li>A local count if you click “Sync across devices: notify me when ready”. That click is not transmitted anywhere.</li>
+      </ul>
+      <p>This data stays in your Chrome profile until you delete a session or backup, clear the extension’s data, or uninstall Restorely.</p>
+
+      <h2>Permissions</h2>
+      <p>Restorely asks only for the permissions it needs to do this work:</p>
+      <ul>
+        <li><strong>tabs</strong> — to read the open tabs so they can be saved, and to reopen them when you restore a session or backup.</li>
+        <li><strong>tabGroups</strong> — to preserve and restore tab group names, colours, and collapsed state.</li>
+        <li><strong>storage</strong> — to save sessions, backups, and settings on this computer.</li>
+        <li><strong>unlimitedStorage</strong> — so a history of backups is not cut short by Chrome’s default 10 MB local storage limit.</li>
+        <li><strong>alarms</strong> — to take periodic automatic snapshots, including after the extension’s background worker has been asleep.</li>
+      </ul>
+      <p>Restorely does not request access to every website, does not read the content of pages, and does not run a script on the sites you visit.</p>
+
+      <h2>What Restorely cannot restore</h2>
+      <p>Some addresses, such as certain <code>chrome://</code> or <code>file://</code> pages, cannot be reopened by an extension. Those tabs may be stored in a snapshot and skipped on restore, with a visible note where possible.</p>
+      <p>Incognito windows are only visible if you choose to allow the extension in incognito. Even then, restored windows are opened as ordinary windows.</p>
+
+      <h2>Children</h2>
+      <p>Restorely is a general-purpose browser tool. It does not knowingly collect personal information from anyone, including children, because it does not collect personal information at all.</p>
+
+      <h2>Changes</h2>
+      <p>If a later version of Restorely introduces optional sync or any feature that would send data off the device, this policy will be updated first, and that feature will be off unless you opt in.</p>
+
+      <h2>Contact</h2>
+      <p>Questions about this policy can be sent to the publisher listed on the Restorely Chrome Web Store page once the extension is published. Until then, use the support contact supplied with the listing or the GitHub repository that hosts this page.</p>
+    </main>
+    <footer>
+      <div class="wrap">Restorely is a local browser extension. This policy describes version 0.2.0.</div>
+    </footer>
+  </body>
+</html>
